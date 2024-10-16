@@ -30,15 +30,15 @@ public class Task2_10 {
         * 8 || 8 | 16 | 24 | 32 | 40 | 48 | 56 | 64 | 72 |
         * 9 || 9 | 18 | 27 | 36 | 45 | 54 | 63 | 72 | 81 |
         */
-       for (int j = 5; j <= 9; j++) {
-        System.out.println(j + " || ");
-        for (int k = 1; k <= 9; k++){
-            System.out.println(j * k);
-            if (k < 9) {
-                System.out.println(" | ");
+        for (int j = 5; j <= 9; j++) {
+            System.out.print(j + " || ");
+            for (int k = 1; k <= 9; k++) {
+                System.out.print(j * k); 
+                if (k < 9) {
+                    System.out.print(" | "); 
+                }
             }
-       }
-       System.out.println(" |");
-       }
+            System.out.println(" |"); 
+        }
     }
 }
