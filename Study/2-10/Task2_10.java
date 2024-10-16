@@ -33,12 +33,9 @@ public class Task2_10 {
         for (int j = 5; j <= 9; j++) {
             System.out.print(j + " || ");
             for (int k = 1; k <= 9; k++) {
-                System.out.print(j * k); 
-                if (k < 9) {
-                    System.out.print(" | "); 
-                }
+                System.out.print((j * k) + (k < 9 ? " | " : ""));
             }
-            System.out.println(" |"); 
+            System.out.println();
         }
     }
 }
